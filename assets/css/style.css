@@ -110,6 +110,10 @@
   --transition-2: 0.5s ease-in-out;
 
 }
+.cert-title {
+  font-weight: bold;
+  color: orange;
+}
 
 
 .view-certifications-btn {
@@ -119,7 +123,8 @@
   padding: 8px 12px; /* Adjust padding for better appearance */
   border-radius: 5px; /* Slightly rounded corners */
   text-decoration: none; /* Remove underline */
-  display: inline-block; /* Ensure it behaves like a button */
+  display: inline-block;
+   margin-top: 10px; /* Ensure it behaves like a button */
 }
 
 .view-certifications-btn:hover {
@@ -618,6 +623,8 @@ main {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+
+  
 }
 
 
