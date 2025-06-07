@@ -621,9 +621,43 @@ main {
 }
 
 
+
 /**
  * #testimonials-modal
  */
+
+
+/* Hide checkboxes */
+.toggle-input {
+  display: none;
+}
+
+/* Hide the text by default */
+.testimonials-text {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  /* Keep your existing styles */
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display: block; /* change from -webkit-box */
+  /* Remove line-clamp properties because content is hidden */
+  line-clamp: none;
+  -webkit-line-clamp: none;
+  -webkit-box-orient: unset;
+}
+
+/* When the checkbox is checked, show the text */
+.toggle-input:checked + label + .testimonials-text {
+  max-height: 500px; /* large enough to show content */
+  opacity: 1;
+}
+
+
+
 
 .modal-container {
   position: fixed;
